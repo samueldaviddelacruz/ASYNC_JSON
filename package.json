@@ -1,0 +1,19 @@
+{
+  "name": "async_json",
+  "version": "1.0.0",
+  "description": "Promisified JSON.parse and JSON.stringify for non blocking parsing of json using napa.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Samuel David De La Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "napajs": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.0.0"
+  }
+}
