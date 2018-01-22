@@ -1,6 +1,6 @@
 {
-  "name": "async_json",
-  "version": "1.0.0",
+  "name": "@samuel023/async_json",
+  "version": "1.0.1",
   "description": "Promisified JSON.parse and JSON.stringify for non blocking parsing of json using napa.js",
   "main": "lib/index.js",
   "scripts": {
@@ -15,5 +15,9 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "mocha": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samueldaviddelacruz/ASYNC_JSON"
   }
 }
