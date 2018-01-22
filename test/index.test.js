@@ -9,7 +9,6 @@ const {
     parseAsync} = AsyncJSON();
 
 
-
     const testJson = {
         "glossary": {
             "title": "example glossary",
@@ -44,6 +43,27 @@ describe('stringifyAsync',()=>{
         stringifyAsync(testJson).should.eventually.equal(strJson).notify(done);
        
     })
+});
+
+describe('parseAsync',()=>{
+
+    it('should return same object as JSON.parse',(done) => {
+        const strJson = JSON.stringify(testJson);
+
+        const parsedJson = JSON.parse(strJson);
+
+        parseAsync(strJson).should.eventually.deep.equal(parsedJson).notify(done);
+       
+    });
+
+    it('should reject on invalid string/input',(done) => {
+        const strJson = JSON.stringify(testJson);
+
+        const parsedJson = JSON.parse(strJson);
+
+        parseAsync(undefined).should.be.rejected.notify(done);
+       
+    });
 });
 
 /*
