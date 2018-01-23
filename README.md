@@ -32,6 +32,6 @@ parseAsync(jsonstr).then( result => {
     console.log(result); //{ name: 'john', lastname: 'doe' }
  });
 
-console.log(await parseAsync(obj));//{ name: 'john', lastname: 'doe' } 
+console.log(await parseAsync(jsonstr));//{ name: 'john', lastname: 'doe' } 
  
 ```
